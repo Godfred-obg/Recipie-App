@@ -1,0 +1,724 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masonry Style Layout</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/confetti.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Move your Select2 CSS here -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+  <script src="script.js" deffer></script>
+</head>
+<body>
+  <div class="top" id="home"> 
+    <div class="nav">
+      <h1><span style="color: rgb(238, 174, 0);">GO</span>RENT</h1>
+      <ul id="links">
+        <li><a href="#home" class="link">Home</a></li>
+        <li><a href="#how_to" class="link">How To</a></li>
+        <li id="rental"><a href="" class="link">Rental <span id="arrow">&#x25BC;</span></a></li>
+        <li><a href="#contact" class="link">Contact Us</a></li>
+      </ul>
+      <div id="top-right">
+        <div style="display: flex;">
+          <img id="order" src="./img/cart2.svg" alt="">
+        </div>
+        
+        <img id="menu" src="./img/menu.svg" alt="">
+        <div class="float">     
+          <a href="#home" class="nav-option">Home</a>
+          <a href="#how_to" class="nav-option">How To</a>
+          <a id="rent_option" style="display: flex; flex-direction: row; justify-content: center; cursor: pointer; text-decoration: none;">Rental<span id="nav-arrow">&#x25BC;</span></a>
+          <a href="#contact" class="nav-option">Contact Us</a>
+      </div>
+      </div>
+
+      <div class="nav-lists">
+        <ul id="nav-list">
+          <li><a href="#book" class="choice">Book</a></li>
+          <li><a href="#car-section" class="choice">Rental List</a></li>
+        </ul>
+      </div>
+      
+      <div class="about">
+        <ul id="about-list">
+          <li><a href="#book" >Book</a></li>
+          <li><a href="#car-section" >Rental List</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="owl-carousel cards">
+      <div class="card"><img src="./img/car3.jpg" alt="" style="width: 100%;"></div>
+      <div class="card"><img src="./img/car2.jpg" alt="" style="width: 100%;"></div>
+      <div class="card"><img src="./img/car1.jpg" alt="" style="width: 100%;"></div>
+    </div>
+    <div class="texts">
+      <h2>Car Rental</h2>
+    <h4>Find your best dream car for rental.</h4>
+    <button><a id="root" href="#car-section">View Cars</a></button>
+    </div>
+  </div>
+
+  <div class="middle" id="how_to">
+    <div class="first" style="text-align: center; padding: 4rem 0; background-color: rgb(251, 251, 251); width: 100%;">
+      <h2 style="font-size: 30px; font-weight: bold; margin-bottom: 3rem;">How It Works</h2>
+      <div id="icons">
+        <div id="container">
+          <img id="icon" src="./img/location.svg" alt="">
+          <h2 style="font-weight: 600; font-size:20px; font-family: 'Outfit';">1. Choose Locations</h2>
+          <h3 style="color: rgb(71, 71, 71); padding: 0 3rem; margin-top: 0;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum since the 1500s,</h3>
+        </div>
+        <div id="container">
+          <img id="icon" src="./img/choice.svg" alt="">
+          <h2 style="font-weight: 600; font-size:20px; font-family: 'Outfit';">2. Choose a car of your choice</h2>
+          <h3 style="color: rgb(71, 71, 71); padding: 0 3rem; margin-top: 0;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum since the 1500s,</h3>
+        </div>
+        <div id="container">
+          <img id="icon" src="./img/car.svg" alt="">
+          <h2 style="font-weight: 600; font-size:20px; font-family: 'Outfit';">3. Book your Car</h2>
+          <h3 style="color: rgb(71, 71, 71); padding: 0 3rem; margin-top: 0;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum since the 1500s,</h3>
+        </div>
+      </div>
+    </div>
+    <div class="book" id="book">
+      <img style="position: fixed; bottom: 0; height: 100%; object-fit: cover; width: 100%; z-index: -1;" src="./img/carr.jpg" alt="">
+      <div id="title">
+        <h3 id="title_h3">RENT NOW</h3>
+      <h2 id="title_h2">Book Vehicle</h2>
+      </div>
+      <form id="myForm" method="get" action="rental.html">
+      <div class="book_bar">
+        
+        <div class="container" id="container1"><div class="book_option" id="option">
+          <ul>
+            <li class="type" value="Suv">Suv</li>
+            <li class="type" value="Sports Car">Sports Car</li>
+            <li class="type" value="Sedan">Sedan</li>
+            <li class="type" value="Trucks">Trucks</li>
+            <li class="type" value="Small Cars">Small Cars</li>
+          </ul>
+          </div><h3>Type: </h3><h3 id="car_type"></h3><span id="arrow">&#x25BC;</span></div>
+        <div class="container" id="container2"><div class="book_option" id="option1">
+          <ul>
+            <li class="map" value="Brescia">Brescia</li>
+            <li class="map" value="Milan">Milan</li>
+            <li class="map" value="Verona">Verona</li>
+            <li class="map" value="Venezia">Venezia</li>
+            <li class="map" value="Bergamo">Bergamo</li>
+            <li class="map" value="Firenze">Firenze</li>
+          </ul>
+        </div><h3>Location: </h3>
+        <h3 id="location_id"></h3><span id="arrow">&#x25BC;</span></div>
+        
+        <div class="container"><div class="flatpickr">
+          <a class="input-button" title="toggle" data-toggle>
+            <h3>Pick-Up Date: </h3>
+        </a>
+          <input id="pickup" name="pickup" type="date" data-input> <!-- input is mandatory -->
+          <img class="input-button" title="toggle" data-toggle id="calendar" src="./img/calendar.svg" alt="">
+      </div></div>
+        <div class="container"><div class="flatpickr">
+          <a class="input-button" title="toggle" data-toggle>
+            <h3>Return Date: </h3>
+        </a>
+          <input id="return" name="return" type="date" data-input> <!-- input is mandatory -->
+          <img class="input-button" title="toggle" data-toggle id="calendar" id="calendar" src="./img/calendar.svg" alt="">
+      </div></div>
+        <button type="button" id="bookNow">Rent Now</button>
+      
+      </div>
+    </form>
+    </div>
+    <div class="car-section" id="car-section">
+      <div id="title">
+        <h3>CATEGORIES</h3> 
+        <h2 style="font-family: 'Outfit';">Rental Car Types</h2>
+      </div>
+      <div id="imgcontainer">
+        <div class="owl-carousel car_types">
+          <div class="car-component"><div class="car-type"><img src="./img/type1.jpg" alt="" style="width: 100%;"><h3>Suv</h3>
+          </div>
+          <div class="detail">
+          <button id="Suv">&#x2197;</button>
+          </div></div>
+          <div class="car-component"><div class="car-type"><img src="./img/type2.jpg" alt="" style="width: 100%;"><h3>Sports Cars</h3>
+          </div>
+          <div class="detail">
+          <button id="Sports Car">&#x2197;</button>
+          </div></div>
+          <div class="car-component"><div class="car-type"><img src="./img/type3.jpg" alt="" style="width: 100%;"><h3>Sedan</h3>
+          </div>
+          <div class="detail">
+          <button id="Sedan">&#x2197;</button>
+          </div></div>
+          <div class="car-component"><div class="car-type"><img src="./img/type5.jpg" alt="" style="width: 100%;"><h3>Trucks</h3>
+          </div>
+          <div class="detail">
+          <button id="Trucks">&#x2197;</button>
+          </div></div>
+          <div class="car-component"><div class="car-type"><img src="./img/type6.jpg" alt="" style="width: 100%;"><h3>Small Cars</h3>
+          </div>
+          <div class="detail">
+          <button id="Small Cars">&#x2197;</button>
+          </div></div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="review-section">
+    <div class="head">
+      <h3>REVIEWS</h3>
+      <h2 style="font-family: 'Outfit';">What Clients Say</h2>
+    </div>
+    <div class="owl-carousel reviews" style="margin-bottom: 3rem;">
+      <div class="review">
+        <img id="quote" src="./img/quote.svg" alt="">
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque perferendis nostrum tenetur porro temporibus doloribus dolores illo?</h3>
+        <div class="profile-star">
+          <div><img id="portrait" src="./img/portrait.jpg" alt=""><h3>Olivia Miller</h3></div>
+          <span id="star"><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i></span>
+        </div>
+      </div>
+      <div class="review">
+        <img id="quote" src="./img/quote.svg" alt="">
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque perferendis nostrum tenetur porro temporibus doloribus dolores illo?</h3>
+        <div class="profile-star">
+          <div><img id="portrait" src="./img/portrait.jpg" alt=""><h3>Olivia Miller</h3></div>
+          <span id="star"><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i></span>
+        </div>
+      </div>
+      <div class="review">
+        <img id="quote" src="./img/quote.svg" alt="">
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque perferendis nostrum tenetur porro temporibus doloribus dolores illo?</h3>
+        <div class="profile-star">
+          <div><img id="portrait" src="./img/portrait.jpg" alt=""><h3>Olivia Miller</h3></div>
+          <span id="star"><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i></span>
+        </div>
+      </div>
+      <div class="review">
+        <img id="quote" src="./img/quote.svg" alt="">
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque perferendis nostrum tenetur porro temporibus doloribus dolores illo?</h3>
+        <div class="profile-star">
+          <div><img id="portrait" src="./img/portrait.jpg" alt=""><h3>Olivia Miller</h3></div>
+          <span id="star"><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i></span>
+        </div>
+      </div>
+      <div class="review">
+        <img id="quote" src="./img/quote.svg" alt="">
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque perferendis nostrum tenetur porro temporibus doloribus dolores illo?</h3>
+        <div class="profile-star">
+          <div><img id="portrait" src="./img/portrait.jpg" alt=""><h3>Olivia Miller</h3></div>
+          <span id="star"><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i></span>
+        </div>
+      </div>
+      <div class="review">
+        <img id="quote" src="./img/quote.svg" alt="">
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque perferendis nostrum tenetur porro temporibus doloribus dolores illo?</h3>
+        <div class="profile-star">
+          <div><img id="portrait" src="./img/portrait.jpg" alt=""><h3>Olivia Miller</h3></div>
+          <span id="star" ><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i></span></div>
+      </div>
+    </div>
+    <i id="line"></i>
+  </div>
+
+  <div class="book" style="height: 20rem!important;">
+    <img style="position: fixed; bottom: 0; height: 100%; object-fit: cover; width: 100%; z-index: -1;" src="./img/carr.jpg" alt="">
+    <div class="rent-car" style="width: 100%;">
+      <h3 id="rent">RENT YOUR CAR</h3>
+      <h2>Interested in Renting?</h2>
+      <h3>Don't hesitate and send us a message.</h3>
+      <div class="buttons" style="width: 21%; display: flex; justify-content: space-between; margin-top: 1.5rem;">
+        <button><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
+        <button id="rent_now">Rent Now <span>&#x2197;</span></button>
+      </div>
+      </div>
+  </div>
+  <div class="logos">
+    <div class="owl-carousel car_logos">
+      <div class="logo"><img src="./img/jaguar.svg" alt=""></div>
+      <div class="logo"><img src="./img/audi.svg" alt=""></div>
+      <div class="logo"><img src="./img/bmw.svg" alt=""></div>
+      <div class="logo"><img src="./img/cadillac.svg" alt=""></div>
+      <div class="logo"><img src="./img/lambo.svg" alt=""></div>
+      <div class="logo"><img src="./img/mercedes.svg" alt=""></div>
+      <div class="logo"><img src="./img/mustang.svg" alt=""></div>
+      <div class="logo"><img src="./img/nissan.svg" alt=""></div>
+      <div class="logo"><img src="./img/porsche.svg" alt=""></div>
+      <div class="logo"><img src="./img/toyota.svg" alt=""></div>
+    </div>
+  </div>
+
+  <footer style="background-color: rgb(29, 29, 29); padding: 3rem; color: rgb(255, 255, 255);" id="contact">
+    <div class="contact" style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin-bottom: 2rem;">
+      <div class="call" style="display: flex; justify-content: center; align-items: center;">
+        <img src="./img/phone.svg" alt="">
+        <div class="text">
+          <h3>Call us</h3>
+          <h3 style="font-size: 14px; font-weight: lighter;">+39 12-345-67890</h3>
+        </div>
+      </div>
+      <div class="mail" style="display: flex; justify-content: center; align-items: center;">
+        <img src="./img/mail.svg" alt="">
+        <div class="text">
+          <h3>Write to us</h3>
+          <h3 style="font-size: 14px; font-weight: lighter;">info@gorent.com</h3>
+        </div>
+      </div>
+      <div class="address" style="display: flex; justify-content: center; align-items: center;">
+        <img src="./img/map.svg" alt="">
+        <div class="text">
+          <h3>Address</h3>
+          <h3 style="font-size: 14px; font-weight: lighter;">Dubai, Water Tower, Office 123</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="socials" style="display: grid; grid-template-columns: 1fr 1fr 1fr;place-items: center;padding-bottom: 5rem;">
+      <div class="social" style="padding-left: 27%;">
+        <h3 style="font-size: 28px;"><span style="color: rgb(238, 174, 0);">GO</span>RENT</h3>
+        <div class="text" style="font-size: 14px; " >Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.</div>
+        <div class="social_icons" style="width: 60%; display: flex; justify-content: space-between;">
+          <img id="icons" src="./img/instagram.svg" alt="" style="color: #fffdfd;">
+          <img id="icons" src="./img/facebook.svg" alt="">
+          <img id="icons" src="./img/youtube.svg" alt="">
+        </div>
+      </div>
+      <div class="social">
+        <h3>Quick Links</h3>
+        <ul style="padding-left: 15%;font-size: 14px; font-weight: 100; color: rgb(238, 174, 0);">
+          <li style="margin-bottom: 10px; cursor: pointer;"><a href="#car-section" style="text-decoration: none; color: white;">Car Types</a></li>
+          <li style="cursor: pointer;"><a href="#book"style="text-decoration: none; color: white;">Book</a></li>
+        </ul>
+      </div>
+      <div class="social" style="padding-left: 21%; font-size: 14px;">
+        <h3>Subscribe</h3>
+        <div class="text">Want to be notified about our services. Just sign up and we'll send you a notification by email.</div>
+        <div class="form">
+          <input type="text" placeholder="Email Address">
+          <button>↗</button>
+        </div>
+      </div>
+    </div>
+
+    <div><h4 style="margin-left: 9%; font-size: 14px; font-weight: 100; border-top: 1px solid rgba(255, 255, 255, 0.112); padding-top: 1rem;">©2024. All rights reserved.</h4></div>
+    
+  </footer>
+  
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  var navbar = document.querySelector('.nav');
+  var menu = document.querySelector('#menu');
+  var span = document.querySelector('.nav h1');
+  const links = document.querySelectorAll(".link");
+  const maps = document.querySelectorAll(".map");
+  const types = document.querySelectorAll(".type");
+  const car_type = document.getElementById("car_type");
+  const location = document.getElementById("location_id");
+  const float = document.querySelector('.float'); 
+  const nav = document.querySelector('.nav-lists');
+  var rent_option = document.querySelector('#rent_option');
+  const nav_options = document.querySelectorAll('.nav-option');
+  const choice = document.querySelectorAll('.choice');
+  var navbarHeight = navbar.offsetHeight; // Get the height of the navbar
+
+  const imgElement = document.getElementById('order');
+  const h1Element = document.createElement('h1');
+  h1Element.classList.add("h1style");
+  let order=0;
+  h1Element.textContent = order;
+  imgElement.insertAdjacentElement('afterend', h1Element);
+
+  float.style.display="none";
+  nav.style.visibility="hidden";
+
+  nav_options.forEach((option)=>{
+    option.addEventListener("click", ()=>{
+      float.style.display="none";
+    })
+  });
+  choice.forEach((option)=>{
+    option.addEventListener("click", ()=>{
+      float.style.display="none";
+      nav.style.visibility="hidden";
+    })
+  });
+
+
+  rent_option.addEventListener('mouseenter', ()=>{
+  nav.style.visibility="visible";
+});
+
+rent_option.addEventListener('mouseleave', ()=>{
+  nav.style.visibility="hidden";
+});
+nav.addEventListener('mouseenter', ()=>{
+  nav.style.visibility="visible";
+});
+nav.addEventListener('mouseleave', ()=>{
+  nav.style.visibility="hidden";
+});
+float.addEventListener("click", (event)=>{
+  if(event.target!=rent_option)
+    nav.style.visibility="hidden";
+})
+
+  menu.addEventListener("click", ()=>{
+  if(float.style.display==="none")
+    float.style.display="flex";
+  else{
+    nav.style.visibility="hidden";
+    float.style.display="none";
+    
+  }
+  
+});
+rent_option.addEventListener("click", ()=>{
+ 
+
+    nav.style.visibility="visible";
+});
+
+  maps.forEach((map)=>{
+        map.addEventListener("click", ()=>{
+          location.innerText=map.innerHTML;
+        });
+  });
+
+  types.forEach((type)=>{
+        type.addEventListener("click", ()=>{
+          car_type.innerText=type.innerHTML;
+        });
+  });
+
+
+
+  
+
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY >= navbarHeight) { // Check if the scroll position is greater than the navbar height
+      navbar.classList.add('nav-style'); 
+      span.style.color="black";
+      imgElement.src="./img/cart.svg";
+      links.forEach((link)=>{
+        link.style.color="black";
+      });
+      menu.src="./img/menu1.svg";
+      //navbar.style.boxShadow="0 0 3px rgba(0, 0, 0, 0.5)";// Add the 'fixed' class to the navbar
+    } else {
+      navbar.classList.remove('nav-style');
+      menu.src="./img/menu.svg";
+      imgElement.src="./img/cart2.svg";
+      span.style.color="white"; // Remove the 'fixed' class from the navbar
+      links.forEach((link)=>{
+        link.style.color="white";
+      });
+    }
+  });
+
+});
+
+const fp=flatpickr(".flatpickr", {
+  placeholder: "Select Date",
+  wrap: true,
+  dateFormat: "Y-m-d"
+});
+
+$(document).ready(function(){
+  $(".reviews").owlCarousel({
+    margin:24,
+    items: 3,
+    autoplay: true,
+    loop: true,
+    dots:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        776:{
+            items:2
+        },
+        1288:{
+
+            items:3
+        }
+    }
+    
+  });
+
+  $(".cards").owlCarousel({
+    items: 1,
+    loop: true,
+    dots: true
+  });
+
+  $(".car_logos").owlCarousel({
+    margin:20,
+    items: 5,
+    loop: true,
+    dots: false,
+    autoplay: true,
+    mouseDrag: false,
+    touchDrag: false,
+    responsiveClass:true,
+    responsive:{
+      0: {
+          items:1
+        },
+        400: {
+          items:2
+        },
+        500:{
+            items:3
+        },
+        776:{
+            items:4
+        },
+        1000:{
+
+            items:5
+        }
+    }
+    
+  });
+
+  $(".car_types").owlCarousel({
+    margin:20,
+    items: 3,
+    loop: false,
+    rewind: true,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        766:{
+            items:2
+        },
+        1000:{
+
+            items:3
+        }
+    }
+  });
+});
+
+const pos=document.querySelectorAll('.map');
+const pickup = document.getElementById('pickup');
+const returndate = document.getElementById('return');
+const cartype=document.querySelectorAll('.type');
+const suv = document.getElementById('Suv');
+const sports = document.getElementById('Sports Car');
+const truck = document.getElementById('Trucks');
+const small = document.getElementById('Small Cars');
+const sedan = document.getElementById('Sedan');
+const rent = document.getElementById('rent_now');
+const book = document.getElementById('bookNow');
+const form = document.getElementById("myForm");
+let cartipo=null;
+let posizione=null;
+let pickupDate=null;
+let returnDate=null;
+
+pickupDate=pickup.value;
+returnDate=returndate.value;
+
+cartype.forEach((type)=>{
+  type.addEventListener("click", ()=>{
+    cartipo=type.getAttribute('value');
+    //console.log(cartipo);
+  })
+})
+pos.forEach((type)=>{
+  type.addEventListener("click", ()=>{
+    posizione=type.getAttribute('value');
+  })
+})
+
+suv.addEventListener("click", ()=>{
+      localStorage.setItem('tipo', suv.id);
+      localStorage.setItem('book', "false");
+      localStorage.setItem('update', "true");
+      //console.log(suv.id);
+      window.location.href = 'rental.html';
+      console.log("here");
+  });
+  sports.addEventListener("click", ()=>{
+      localStorage.setItem('tipo', sports.id);
+      localStorage.setItem('book', "false");
+      localStorage.setItem('update', "true");
+      window.location.href = 'rental.html';
+      console.log("here");
+  })
+  sedan.addEventListener("click", ()=>{
+      localStorage.setItem('tipo', sedan.id);
+      localStorage.setItem('book', "false");
+      localStorage.setItem('update', "true");
+      window.location.href = 'rental.html';
+      console.log("here");
+  })
+  truck.addEventListener("click", ()=>{
+      localStorage.setItem('tipo', truck.id);
+      localStorage.setItem('book', "false");
+      localStorage.setItem('update', "true");
+      window.location.href = 'rental.html';
+  })
+  small.addEventListener("click", ()=>{
+      localStorage.setItem('tipo', small.id);
+      localStorage.setItem('book', "false");
+      localStorage.setItem('update', "true");
+      window.location.href = 'rental.html';
+  })
+  rent.addEventListener("click", ()=>{
+      localStorage.setItem('tipo', "all");
+      localStorage.setItem('book', "false");
+      window.location.href = 'rental.html';
+  })
+
+  book.addEventListener("click", ()=>{
+    if(pickupDate!==null && returnDate!==null && posizione!==null && cartipo!==null){
+      localStorage.setItem('tipo', cartipo);
+      localStorage.setItem('posizione', posizione);
+      localStorage.setItem('return', returnDate);
+      localStorage.setItem('pickup', pickupDate);
+      localStorage.setItem('book', "true");
+      console.log(pickupDate);
+      form.submit();
+      //window.location.href = 'rental.html';
+    }
+    //console.log(cartipo);
+  })
+
+
+const rental=document.querySelector("#rental");
+const container=document.querySelector("#container1");
+const container2=document.querySelector("#container2");
+const option=document.querySelector("#option");
+const option1=document.querySelector("#option1");
+const rental_options=document.querySelector(".about");
+const carOption=document.querySelector("#car");
+const locationOption=document.querySelector("#location");
+
+
+rental.addEventListener('mouseenter', ()=>{
+  rental_options.style.visibility="visible";
+  rental_options.style.animation= "moveUp2 0.45s forwards";
+});
+rental.addEventListener('mouseleave', ()=>{
+  rental_options.style.visibility="hidden";
+  rental_options.style.animation= "none";
+});
+rental_options.addEventListener('mouseleave', ()=>{
+  rental_options.style.visibility="hidden";
+  rental_options.style.animation= "none";
+});
+rental_options.addEventListener('mouseenter', ()=>{
+  rental_options.style.visibility="visible";
+});
+
+
+document.addEventListener('click', function(event) {
+        // Check if the clicked element is not the container
+        if (event.target !== container) {
+            // Code to execute if something else is clicked
+            option.style.visibility="hidden";
+        }
+        else{
+          if(option.style.visibility==="visible")
+            option.style.visibility="hidden";
+          else
+            option.style.visibility="visible";
+        }
+    });
+document.addEventListener('click', function(event) {
+    // Check if the clicked element is not the container
+    if (event.target !== container2) {
+        // Code to execute if something else is clicked
+        option1.style.visibility="hidden";
+    }
+    else{
+      if(option1.style.visibility==="visible")
+        option1.style.visibility="hidden";
+      else
+        option1.style.visibility="visible";
+    }
+});
+
+
+
+window.addEventListener('scroll', function() {
+
+var rect = option.getBoundingClientRect();
+
+// Get the height of the viewport
+var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+// Check if the bottom of the element touches the bottom of the viewport
+if (rect.bottom >= windowHeight) {
+    // Box touches the bottom of the window
+    option.style.bottom="100%";
+    option1.style.bottom="100%";
+}
+
+
+// Check if the top of the element touches the top of the page
+if (rect.top <= 0) {
+    // Box touches the top of the page
+    option.style.bottom="-270%";
+    option1.style.bottom="-270%";
+}
+
+});
+
+
+</script>
+</html>
